@@ -1,0 +1,31 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class PracticeBrowserCommands {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "./Drivers\\chromedriver.exe");
+		
+		WebDriver driver= new ChromeDriver();
+		
+		driver.navigate().to("https://www.facebook.com");
+		
+		driver.get("https://www.google.com/");
+		
+		
+		
+		//driver.navigate().back();
+		
+		driver.navigate().forward();
+		
+		
+		
+		driver.quit();
+		
+		
+		
+
+	}
+
+}
